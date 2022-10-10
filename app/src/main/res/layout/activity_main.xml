@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbackground"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/start_button"
+        android:layout_marginTop="134dp"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:background="@drawable/button_drawable"
+        android:fontFamily="@font/montserrat_alternates_black"
+        android:gravity="center"
+        android:text="START"
+        android:textAlignment="center"
+        android:textColor="@color/orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/setting_button"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_drawable"
+        android:fontFamily="@font/montserrat_alternates_black"
+        android:gravity="center"
+        android:text="SETTING"
+        android:textAlignment="center"
+        android:textColor="@color/orange"
+        app:layout_constraintEnd_toEndOf="@+id/start_button"
+        app:layout_constraintStart_toStartOf="@+id/start_button"
+        app:layout_constraintTop_toBottomOf="@+id/start_button" />
+
+    <TextView
+        android:id="@+id/score_button"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_drawable"
+        android:fontFamily="@font/montserrat_alternates_black"
+        android:gravity="center"
+        android:text="TOP 3"
+        android:textAlignment="center"
+        android:textColor="@color/orange"
+        app:layout_constraintEnd_toEndOf="@+id/setting_button"
+        app:layout_constraintStart_toStartOf="@+id/setting_button"
+        app:layout_constraintTop_toBottomOf="@+id/setting_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>
